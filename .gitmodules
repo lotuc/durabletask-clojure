@@ -1,0 +1,4 @@
+[submodule "proto/durabletask-protobuf"]
+	path = proto/durabletask-protobuf
+	url = https://github.com/microsoft/durabletask-protobuf
+	branch = distributed_tracing

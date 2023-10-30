@@ -1,0 +1,7 @@
+{:paths ["target/classes"]
+ :deps {com.google.protobuf/protobuf-java {:mvn/version "3.24.0"}}
+ :deps/prep-lib {:ensure "target/classes"
+                 :alias :build
+                 :fn prep-lib}
+ :aliases {:build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.6"}}
+                   :ns-default build}}}
