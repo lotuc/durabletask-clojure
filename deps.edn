@@ -1,6 +1,7 @@
 {:paths ["src" "resources"]
  :deps {com.microsoft/durabletask {:local/root "./proto"}
         com.appsflyer/pronto {:mvn/version "2.1.2"}
+        io.grpc/grpc-netty-shaded {:mvn/version "1.46.0"}
         org.clojure/tools.logging {:mvn/version "1.2.4"}}
  :aliases
  {:dev {:extra-paths ["dev-src"]
