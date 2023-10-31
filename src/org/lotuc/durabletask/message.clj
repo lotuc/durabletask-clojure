@@ -2,8 +2,7 @@
   (:require
    [clojure.java.io :as io]
    [clojure.string :as str]
-   [pronto.core :as p]
-   [pronto.utils :as u]))
+   [pronto.core :as p]))
 
 (set! *warn-on-reflection* true)
 
@@ -19,9 +18,7 @@
 
 (defmacro def-durabletask-mapper []
   (let [classes (map (fn [n] (symbol (str outer-classname "$" n))) (message-names))]
-    `(p/defmapper ~'mapper [~@classes]
-       :key-name-fn u/->kebab-case
-       :enum-value-fn u/->kebab-case)))
+    `(p/defmapper ~'mapper [~@classes])))
 
 (defn def-clj-map->proto-map [clazz-name]
   (let [n (symbol (str "clj-map->proto-map-" clazz-name))

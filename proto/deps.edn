@@ -1,5 +1,8 @@
 {:paths ["target/classes"]
- :deps {com.google.protobuf/protobuf-java {:mvn/version "3.24.0"}}
+ :deps {com.google.protobuf/protobuf-java {:mvn/version "3.24.0"}
+        io.grpc/grpc-protobuf {:mvn/version "1.46.0"}
+        io.grpc/grpc-stub {:mvn/version "1.46.0"}
+        org.apache.tomcat/annotations-api {:mvn/version "6.0.53"}}
  :deps/prep-lib {:ensure "target/classes"
                  :alias :build
                  :fn prep-lib}
