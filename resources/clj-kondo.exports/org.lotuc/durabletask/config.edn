@@ -1,0 +1,4 @@
+{:hooks {:macroexpand
+         {org.lotuc.durabletask.message/import-classes org.lotuc.durabletask.message/import-classes
+          org.lotuc.durabletask.message/def-mapper org.lotuc.durabletask.message/def-mapper
+          org.lotuc.durabletask.message/def-conversions org.lotuc.durabletask.message/def-conversions}}}
